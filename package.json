@@ -5,9 +5,13 @@
   "main": "server.js",
   "repository": "",
   "author": "Lucas Lima Muller <contato@lucaslimamuller.com.br>",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "4.2.4"
+  },
   "dependencies": {
-    "async": "~0.2.8",
-    "express": "~3.2.4",
-    "socket.io": "~0.9.14"
+    "express": "~3.2.4"
   }
 }
