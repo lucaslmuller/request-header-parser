@@ -11,8 +11,15 @@ app.get("/", function(req,res){
     "software":os
   };
   
-  res.send(JSON.stringify(result));
-  res.end();
+  res.end(
+    "<html>" +
+    "<head><title>Request Header Parser</title></head>" +
+    "<body>" +
+    "<h1>Request Header Parser</h1>" +
+    JSON.stringify(result) + 
+    "</body>" +
+    "</html>"
+    );
 });
 
 app.listen(process.env.PORT || 8080);
