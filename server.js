@@ -11,7 +11,8 @@ app.get("/", function(req,res){
     "software":os
   };
   
-  res.end(JSON.stringify(result));
+  res.send(JSON.stringify(result));
+  res.end();
 });
 
 app.listen(8080);
